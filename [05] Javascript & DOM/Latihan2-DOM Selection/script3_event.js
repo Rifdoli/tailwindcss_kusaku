@@ -1,8 +1,12 @@
 const p3 = document.querySelector ('.p3');
 
-function ubahWarna(){
-    p3.style.backgorundcolor = 'lightblue';
+function ubahWarnaP3 (){
+    p3.style.backgroundColor = 'lightblue';
+}
+
+function ubahWarnaP2 (){
+    p2.style.backgroundColor = 'lightblue';
 }
 
 const p2 = document.querySelector ('.p2');
-p2.onclick = ubahWarna;
+p2.onclick = ubahWarnaP2;
