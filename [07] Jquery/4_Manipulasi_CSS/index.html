@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar JQuery</title>
+  <style>
+    .merah{
+      color: red;
+    }
+
+    .biru{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Kemana Kamu Ingin Pergi ?</h1>
+  <ul class="lokasi">
+    <li id="bandung">
+      <strong>Bandung</strong>
+      <button id="pilih-bandung">Pilih Bandung</button>
+      <button id="hapus-bandung">Hapus Bandung</button>
+    </li>
+    <li id="surabaya">
+      Surabaya
+    </li>
+    <li id="jakarta">
+      Jakarta
+    </li>
+    <br>
+    <button id="bandung-biru">Bandung Biru</button>
+    <button id="bandung-merah">Bandung Merah</button>
+    <button id="bandung-besar">Bandung Besar</button>
+  </ul>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  $(document).ready(function () {
+    $('#bandung-biru').on('click',function(){
+      $('#bandung').removeClass('merah');
+      $('#bandung').addClass('biru');
+    });
+
+    $('#bandung-merah').on('click',function(){
+      $('#bandung').removeClass('biru');
+      $('#bandung').addClass('merah');
+    });
+
+    $('#bandung-besar').on('click', function (){  
+      $('#bandung').animate({
+        fontSize: 50
+      })
+    });
+  });
+</script>
+</body>
+</html>
