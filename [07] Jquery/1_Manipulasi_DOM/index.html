@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar JQuery</title>
+</head>
+<body>
+
+  <h1>Kemana Kamu Ingin Pergi ?</h1>
+  <ul class="lokasi">
+    <li id="bandung"><strong>Bandung</strong></li>
+    <li id="surabaya">Surabaya</li>
+    <li id="jakarta">Jakarta</li>
+    <li id="total-biaya"><input type="number" name="input-biaya" id="input-biaya"></li>
+  </ul>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    // 1. Contoh penggunaan add
+    // $(document).ready(function(){
+    //     var jogja = $('<li>Yogyakarta</li>');
+    //     var bali = $('<li>Bali</li>');
+
+    //     $('.lokasi').prepend(jogja);
+    //     $('.lokasi').append(bali);
+
+    //     const subJudul = $('<h2>Lokasi Pilihan: </h2>');
+
+    //     subJudul.insertBefore('.lokasi');
+    // });
+
+    // 2. Contoh penggunaan get
+    // $(document).ready(function () {
+    //    var getTextBandung = $('#bandung').text();
+    //    var getHtmlBandung = $('#bandung').html();
+    //    var getInputTotalBiaya = $('#input-biaya').val();
+
+    //    console.log(getTextBandung);
+    //    console.log(getHtmlBandung);
+    //    console.log(getInputTotalBiaya);
+    // });
+
+    // 3. Contoh penggunaan set
+    // $(document).ready(function () {
+    //     $('#bandung').text('Cimahi');
+    //     $('#surabaya').html('<em>Surabaya</em>');
+    //     $('#input-biaya').val(200);
+    // });
+
+    // 4. Contoh Penggunaan remove
+    // $(document).ready(function () {
+    //     $('#total-biaya').empty();
+    // });
+
+</script>
+</body>
+</html>
